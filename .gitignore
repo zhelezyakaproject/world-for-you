@@ -1,0 +1,16 @@
+# ключи и личное гостя
+.env
+знакомство/
+# личные настройки этого компьютера
+CLAUDE.local.md
+.claude/settings.local.json
+# установленное и скачанное
+node_modules/
+/.venv/
+/models/
+# записи встреч и кадры проверок
+media/session/
+media/shots/
+# профиль Chrome мира и сертификат для браузера шлема
+world/.chrome/
+world/cert/

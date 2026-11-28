@@ -1,0 +1,20 @@
+{
+  "port": 8010,
+  "quality": "full",
+  "stt": "gigaam",
+  "voice": {
+    "id": "",
+    "note": "Голос хозяина мира. provider: elevenlabs | edge | none; не задан — ElevenLabs, если в .env есть ключ ELEVENLABS_API_KEY, иначе бесплатный голос Microsoft Edge (edgeVoice, без ключа, нужен интернет). id — голос ElevenLabs из списка GET https://api.elevenlabs.io/v1/voices.",
+    "edgeVoice": "ru-RU-SvetlanaNeural",
+    "model": "eleven_v4",
+    "settings": { "stability": 0.6 }
+  },
+  "client": {
+    "guest": "Гость",
+    "host": "Fable",
+    "mic": { "threshold": 0.012, "silenceMs": 900, "minMs": 0, "maxMs": 30000, "muteWhileFable": true, "echoTailMs": 700, "endWord": "связь, приём" },
+    "spectator": { "fps": 30, "views": "eyes", "size": [1920, 1080], "mime": "video/webm;codecs=h264,opus", "mbps": 40 },
+    "xr": { "scale": 1.0 },
+    "pad": { "trigger": 0, "grip": 1, "a": 4, "b": 5 }
+  }
+}

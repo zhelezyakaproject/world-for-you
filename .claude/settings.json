@@ -1,0 +1,30 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node world/fable.mjs *)",
+      "Bash(node world/test/*)",
+      "Bash(SHOT_PORT=* node world/test/shot.mjs *)",
+      "Bash(OPEN=1 node world/server.mjs)",
+      "PowerShell(node world/fable.mjs *)"
+    ],
+    "defaultMode": "acceptEdits"
+  },
+  "env": {
+    "BASH_DEFAULT_TIMEOUT_MS": "600000",
+    "BASH_MAX_TIMEOUT_MS": "600000"
+  },
+  "effortLevel": "medium",
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"$CLAUDE_PROJECT_DIR/world/fable.mjs\" hold",
+            "timeout": 15
+          }
+        ]
+      }
+    ]
+  }
+}

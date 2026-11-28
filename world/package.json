@@ -1,0 +1,19 @@
+{
+  "name": "simulation-1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node test/run.mjs && node test/actions.mjs"
+  },
+  "dependencies": {
+    "@dimforge/rapier3d-compat": "^0.14.0",
+    "iwer": "^2.0.1",
+    "mp4-muxer": "^5.2.2",
+    "msedge-tts": "^2.1.1",
+    "three": "^0.180.0"
+  },
+  "devDependencies": {
+    "puppeteer-core": "^24.0.0"
+  }
+}
